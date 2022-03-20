@@ -62,7 +62,7 @@ app.post("/contact",(req,res)=>{
     email: req.body.email,
     comment: req.body.comment
   })
-// newUser.save()
+ newUser.save()
 
 res.render("index")
 })
