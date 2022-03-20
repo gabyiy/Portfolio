@@ -1,0 +1,116 @@
+
+
+.main-section-2
+    width: 100%
+    margin: auto
+    padding-top: 100px
+    display: flex
+    width: auto
+    justify-content: center
+    .img-s
+        width: 35rem
+        height: auto
+        display: block
+        border-radius: 50%
+
+
+.width-intro
+    padding-left: 20px
+    width: 600px
+    label.hello
+        padding-top: 50px 
+        font-size: 7rem
+        font-weight: 600
+
+
+.btn-flex
+    display: flex
+    padding-top: 20px
+    justify-content: center
+    
+.circle-r
+    +circleStyle(#EEA302, 150px, 150px, 50%, 20px, flex,solid 1px black,center,center)
+    &:hover
+        background-color: $body-background
+        box-shadow: -2px -2px 20px 2px rgba(0,0, 0,.15 ), 2px 2px 17px 2px rgba(0,0,0,1)
+
+.circle-p
+    +circleStyle(#FF3B25, 150px, 150px, 50%, 20px , flex,solid 1px black,center,center)
+    &:hover
+        background-color: $body-background
+        box-shadow: -2px -2px 20px 2px rgba(0,0, 0,.15 ), 2px 2px 17px 2px rgba(0,0,0,1)
+        
+  
+.circle-c
+    +circleStyle(#80D8DA, 150px, 150px, 50%, 20px , flex,solid 1px black,center,center)
+    &:hover
+        background-color: $body-background
+        box-shadow: -2px -2px 20px 2px rgba(0,0, 0,.15 ), 2px 2px 17px 2px rgba(0,0,0,1)
+
+p.h3-circle
+    font-size: 1.5rem
+    font-weight: 700
+    color: black
+    display: block
+    margin: 0
+    text-decoration: none
+   
+
+
+.hr
+    padding: 0 30px 0 30px
+           
+
+@media (max-width: 568px)
+    .main-section-2
+        display: inline-flex
+        flex-direction: column
+        margin: auto
+        padding: 40px 10px 0
+        .img-s
+            width: 300px
+            justify-content: center
+            margin: auto
+        
+    
+    div.img-col
+        order: 2
+    div.width-intro
+        order: 1
+
+    a.circle-p,a.circle-c,a.circle-r
+        margin-right: 5px
+    
+
+
+    .circle
+        width: 90px
+        height: 90px
+    
+    div.img-col
+        order: 2
+        display: block
+        text-align: center
+        order: 2
+      
+    
+    .width-intro
+        order: 1
+        width: auto
+        margin-right: 10px
+    
+    div.dot
+        padding-right: 20px
+
+  
+ 
+    
+
+
+
+
+ 
+    
+
+
+

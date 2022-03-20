@@ -1,0 +1,141 @@
+
+.nav-bar
+  width: 100%
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  padding: 25px 20px 0
+  .dot
+    height: 25px
+    width: 25px
+    background-color: #eea302
+    border-radius: 50%
+    display: inline-block
+   
+   
+.name
+  margin-right: auto
+  padding-left: 10px
+  font-size: 25px
+  font-weight: 800 
+  a.Acolor
+    &:hover
+      color: chocolate
+  .title
+    font-size: 17px
+    font-weight: normal 
+
+.topnav 
+  display: flex
+  margin: 0
+  margin-top: 10px
+  list-style: none
+  font-size: 17px
+  .topnav .nav--link,a 
+    text-decoration: none
+    color: #000000
+    padding: 0 20px
+    &:hover
+      color: chocolate
+
+
+.dropdownLink 
+  display: none
+    
+// .vr-line
+//   border: 0
+//   margin: 0
+//   border-left: 1px solid black
+//   height: 2px
+
+.hr
+  padding-top: 60px
+
+
+  
+@media (max-width: 992px)
+  .img-center
+    float: left
+  
+  
+@media (max-width: 568px)
+  div.hr
+    padding: 0
+  
+  
+  ul.topnav li a.nav--link
+    display: none 
+    padding-right: 10px
+ 
+  
+  .title
+    padding: 9px 5px 10px 0
+    
+
+  ul.topnav li.dropdownLink
+    display: block
+    position: absolute
+    top: 35px
+    right: 10px 
+       
+    
+
+  ul.topnav.responsive li.dropdownLink 
+    position: absolute
+    top: 35px
+    right: 10px
+    
+
+  ul.topnav.responsive 
+    flex-direction: column
+    text-align: right
+    
+
+  ul.topnav.responsive li 
+    position: relative
+    top: 30px
+    right: 0px
+    
+
+  ul.topnav.responsive li a.nav--link 
+    display: block
+    line-height: 2
+
+  .topnav .topnav .nav--link, .topnav a
+    padding: 0  10px 
+
+  .img-col
+    order: 2
+  .second-column
+    order: 1
+  
+  img.img-center
+    float: left
+  
+  .center-row
+    justify-content: center
+
+  .circle-r,.circle-c,.circle-p
+    width: 6em
+    margin: 10px 30px 10px 0
+    height: 6em
+
+  p.h3-circle
+    
+    font-size: 1rem
+    margin: 0
+
+  footer.foot
+    display: block
+
+  .project-main-section
+    padding: 0  10px 
+  .pad
+    display: block
+
+@media( min-width: 998px )
+  .roud-shape
+    flex: 0 0 23%
+    max-width: 30%
+
+   

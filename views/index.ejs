@@ -1,14 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/main.css" >
-    <title>Portfolio</title>
-</head>
-<body>
-    
-</body>
-</html>
-<h1>lol</h1>
+<%- include("header") -%>
+
+
+    <div class="main-section-2 container-fluid">
+      <div class="img-col">
+        <img class="img-s" src="images/gabi.jpg" />
+      </div>
+      <div class="width-intro">
+        <label class="hello">Hola!</label>
+        <div>
+          <h1>Cosas sobre mi</h1>
+        </div>
+        <div>
+          <p>
+            Soy una persona trabajadora, que esta acostumbrada al trabajo bajo presion, que adora los retos, y no  se rinde con facilidad. Mi experiencia previa tambien me defiene como una persona sociable.
+          </p>
+        </div>
+        <div class="btn-flex">
+          <a  class="circle-r text-decoration-none"  href="/resume">
+          <p class=" h3-circle" >
+           Resumen
+          </p>
+        </a>
+         
+       
+        <a class=" circle-c text-decoration-none"  href="/contact">
+          <p class="  h3-circle">
+            Contacto
+          </p>
+        </a>
+        
+         <a class="circle-p text-decoration-none"  href="/projects">
+          <p class="   h3-circle"  >
+         Proyectos
+          </p>
+        </a>
+     
+       
+        </div>
+      </div>
+    </div>
+   
+  <%- include("footer") -%>

@@ -18,7 +18,17 @@ app.get("/",(req,res)=>{
     res.render("index")
 })
 
+app.get("/projects",(req,res)=>{
+  res.render("projects")
+})
 
+app.get("/resume",(req,res)=>{
+  res.render("resume")
+})
+
+app.get("/contact",(req,res)=>{
+  res.render("contact")
+})
 
 let port = process.env.PORT;
 if (port == null || port == "") {
