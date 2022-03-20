@@ -4,7 +4,12 @@
 </div>
 <div class="container-fluid main-container ">
 <% users.map(user=>{ %>
+  <div class="d-flex">
+    <form action="/delete" method="post" class="delUser">
+      <input type="checkbox" name="checkbox" value="<%=user._id %>" onChange="this.form.submit()">
+    </form>
     <h3><%= user.userName %> a dejado este mensaje:</h3>
+  </div>
     <p><%= user.comment %></p>
     <p>contacto : <%= user.email %></p>
 <% }) %>

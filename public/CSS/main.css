@@ -449,3 +449,10 @@ div.noPading {
   justify-content: center;
   text-align: center;
 }
+.delUser{
+  padding: 10px 5px 0 0;
+}
+
+.pad-mess{
+  padding-top: 5px;
+}

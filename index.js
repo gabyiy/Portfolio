@@ -2,7 +2,10 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const ejs = require ("ejs")
 const mongoose = require ("mongoose")
-const res = require("express/lib/response")
+
+
+var bcrypt = require('bcryptjs')
+var salt = bcrypt.genSaltSync(10);
 
 
 const app= express()
@@ -54,11 +57,33 @@ app.post("/contact",(req,res)=>{
   const newUser= new User({
     userName: req.body.name,
     email: req.body.email,
-    comment: req.body.comment
+    comment: req.body.message
   })
  newUser.save()
 
 res.render("index")
+})
+
+
+
+app.post("/delete",(req,res)=>{
+   const idUser=req.body.checkbox
+
+   User.findByIdAndRemove({_id:idUser},(err)=>{
+     if(err){
+       console.log(err);
+     }else{
+       console.log("user deletede succeusfuly");
+       User.find({},(err,usersLeft)=>{
+         if (err){
+           console.log(err);
+         }else{
+          res.render("usersMessages",{users:usersLeft})
+         }
+       })
+    
+     }
+   })
 })
 
 let port = process.env.PORT;
