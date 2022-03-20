@@ -404,52 +404,48 @@ div.noPading {
     padding: 0;
   }
 
+  .foot {
+    padding: 0;
+  }
 }
+
+.main-container{
+    max-width: 1000px
+    
+}
+
 .main{
     height: 700px
+   
 }
-.main-col{
-    margin-top: 80px
-}
-
-
-
-
 
 @media  ( max-width: 700px ){
     div.main{
         height: auto
+    }
 }
-}
-@media ( max-width: 668px  ){
+@media ( max-width: 468px  ){
     .main-col{
         justify-content: left !important
 }
     .fo-contact{
         position: relative
     }
-    .main-col h1.project-c
-    {
+    .main-col h1.project-c{
         padding: 0
     }
-    div.foot{
-        padding-right: 5px;
+    .foot{
+        padding-left: 5px;
     }
 }
 
 .main-container{
-    max-width: 1000px
-  
+  height: 550px;
+  margin-top: 70px;
 }
 
-.pos{
-    position: relative
-    
-}
-
-@media  ( max-width: 700px ){
-    div.main-container{
-        height: auto
-    
-    }
+.pad-user{
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
 }

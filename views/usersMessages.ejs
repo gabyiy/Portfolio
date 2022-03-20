@@ -1,5 +1,7 @@
 <%- include("header") -%>
-
+<div class="pad-user">
+  <h1>Mensaje de los usuarios</h1>
+</div>
 <div class="container-fluid main-container ">
 <% users.map(user=>{ %>
     <h3><%= user.userName %> a dejado este mensaje:</h3>
@@ -9,45 +11,4 @@
 
 
 </div>
-
-
-<div class="hr "><hr /></div>
-<footer class="container-fluid foot pos">
- 
-
-  <div class="phone">
-    <h5 class="fotter-contact">Telefono</h5>
-    <p>646-154-746</p>
-  </div>
-  <div class="email">
-    <h5 class="fotter-contact">Correo</h5>
-    <p>gabyiy2000@hotmail.com</p>
-  </div>
-  <div class="fallow-me">
-    <h5 class="fotter-contact">Sigueme</h5>
-    <p>
-      <a href="https://www.linkedin.com/in/nitagabrieldev"><i class="fa fa-lg fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/gabyiy"><i class="fa fal lgfa-brands fa-github"></i></a>
-    </p>
-  </div>
-  <div class="licence">
-    <label>2022 Por :</label>
-    <p> Nita Gabriel</p>
-  </div>
-</footer>
-
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-  integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-  crossorigin="anonymous"
-></script>
-<script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="app.js"></script>
-</body>
-</html>
+<%- include("footer") -%>
