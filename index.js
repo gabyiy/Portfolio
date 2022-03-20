@@ -24,12 +24,6 @@ const contactSchema = new mongoose.Schema({
 
 const User = mongoose.model("User",contactSchema)
 
-const userPost = new User({
-  userName:"Gabi",
-  email:"lol",
-  comment:"functioneaza"
-})
-// userPost.save()
 
 app.get("/",(req,res)=>{
 
