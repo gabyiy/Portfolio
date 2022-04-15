@@ -108,6 +108,11 @@ p.h3-circle {
 .hr {
   padding: 0 30px 0 30px;
 }
+.proj1-img{
+  height: 300px;
+  width: 300px;
+}
+
 
 @media (max-width: 568px) {
   .main-section-2 {
