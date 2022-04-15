@@ -245,7 +245,8 @@ p.h3-circle {
 
 .name {
   margin-right: auto;
-  padding-left: 10px;
+  padding-top: 10px;
+ 
   font-size: 25px;
   font-weight: 800;
 }
