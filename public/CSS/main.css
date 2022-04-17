@@ -245,8 +245,7 @@ p.h3-circle {
 
 .name {
   margin-right: auto;
-  padding-top: 10px;
- 
+  padding-left: 10px;
   font-size: 25px;
   font-weight: 800;
 }
@@ -375,6 +374,9 @@ p.h3-circle {
   .pad {
     display: block;
   }
+}
+.proj-apps{
+  padding: 0;
 }
 @media (min-width: 998px) {
   .roud-shape {
