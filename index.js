@@ -2,12 +2,13 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const ejs = require ("ejs")
 const mongoose = require ("mongoose")
+const  dotenv = require ('dotenv');
 
 
 var bcrypt = require('bcryptjs')
 var salt = bcrypt.genSaltSync(10);
 
-
+dotenv.config();
 const app= express()
 
 app.set("view engine", "ejs")
@@ -16,7 +17,7 @@ app.use(express.static("public"))
 
 app.use(bodyParser.urlencoded({extended:true}))
 
-mongoose.connect("mongodb+srv://gabi:711334@cluster0.4uo4k.mongodb.net/portfolioDB?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGODB_URL)
 
 
 const contactSchema = new mongoose.Schema({
@@ -58,7 +59,7 @@ app.post("/contact",(req,res)=>{
     userName: req.body.name,
     email: req.body.email,
     comment: req.body.message
-  })
+  })  
  newUser.save()
 
 res.render("index")
