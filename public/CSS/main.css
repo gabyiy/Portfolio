@@ -24,6 +24,13 @@ p {
   display: flex;
   width: auto;
   justify-content: center;
+  min-height: 70vh;
+
+}
+
+.main-home{
+  display: flex;
+
 }
 .main-section-2 .img-s {
   width: 35rem;
