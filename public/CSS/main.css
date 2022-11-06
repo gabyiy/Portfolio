@@ -29,7 +29,6 @@ p {
 
 .main-home{
   display: flex;
-flex-direction: column;
 }
 .main-section-2 .img-s {
   width: 35rem;
@@ -132,7 +131,10 @@ p.h3-circle {
     justify-content: center;
     margin: auto;
   }
+.main-home{
+  flex-direction: column;
 
+}
   div.img-col {
     order: 2;
   }
