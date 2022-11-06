@@ -25,12 +25,11 @@ p {
   width: auto;
   justify-content: center;
   min-height: 70vh;
-
 }
 
 .main-home{
   display: flex;
-
+flex-direction: column;
 }
 .main-section-2 .img-s {
   width: 35rem;
